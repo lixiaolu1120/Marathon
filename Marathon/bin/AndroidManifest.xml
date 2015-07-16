@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.cnic.marathon"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <!-- 地图权限 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <!-- GPS定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="cn.cnic.marathon.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="SUQ8zW1aNkvbF6mdC6xe1vi6" />
+
+        <activity
+            android:name="cn.cnic.marathon.ui.BMapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/clearwhite" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.cnic.marathon.ui.DatePlaceChoseActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="cn.cnic.marathon.ui.SetActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.cnic.marathon.ui.ScheduActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:name="cn.cnic.marathon.ui.ActuallyActivity" />
+        <activity
+            android:name="cn.cnic.marathon.ui.PlayerActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="cn.cnic.marathon.ui.PlayerInfoActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="cn.cnic.marathon.ui.AudienceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.cnic.marathon.ui.AdvertActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.cnic.marathon.ui.PartnersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.cnic.marathon.ui.SurroundActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.cnic.marathon.ui.SocialActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.cnic.marathon.ui.ScheduContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.cnic.marathon.ui.PartnerContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.cnic.marathon.ui.DelicacyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.cnic.marathon.ui.HotelActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.cnic.marathon.ui.GroupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="cn.cnic.marathon.ui.MyGroupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="cn.cnic.marathon.ui.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.cnic.marathon.ui.NearlyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent" />
+        <activity
+            android:name="cn.cnic.marathon.ui.GameFuctionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent" />
+        <activity
+            android:name="cn.cnic.marathon.ui.CheerleadersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.cnic.marathon.ui.SharedPlacesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:name="cn.cnic.marathon.ui.LoginActivity" />
+        <activity
+            android:name="cn.cnic.marathon.ui.MenuAcitvity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AnimActivityTheme" >
+        </activity>
+        <activity
+            android:name="cn.cnic.marathon.ui.FriendMangerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.cnic.marathon.ui.StarRunnerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.cnic.marathon.ui.CheerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.cnic.marathon.ui.UserInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+        </activity>
+        <activity
+            android:name="cn.cnic.marathon.ui.DetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.cnic.marathon.ui.TeamContentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.cnic.marathon.ui.TeamActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.cnic.marathon.ui.AboutUsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.cnic.marathon.ui.GameIntroductionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ui.AvatarChoseActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <service android:name="cn.cnic.marathon.service.GPSLocationService" />
+        <service android:name="cn.cnic.marathon.service.PushService" />
+        <service android:name="cn.cnic.marathon.service.MarkUpdateService" />
+
+        <receiver
+            android:name="cn.cnic.marathon.service.AlarmReceiver"
+            android:process=":remote" >
+        </receiver>
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+</manifest>

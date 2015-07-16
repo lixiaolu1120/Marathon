@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp" 
+    >
+
+    <cn.cnic.marathon.ui.CustomTextView
+        android:id="@+id/triangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/triangle"
+        android:textColor="#e0000000"
+        android:layout_marginTop="-5sp"
+        android:layout_marginBottom="-10sp"
+        android:layout_centerHorizontal="true" 
+        android:textSize="20sp"/>
+    <ListView
+        android:id="@+id/poi_menu_list"
+        android:divider="@drawable/poi_list_divider"
+        android:dividerHeight="1dp"
+        android:background="@drawable/poi_list_corners"
+        android:listSelector="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/triangle"/>
+
+</RelativeLayout>

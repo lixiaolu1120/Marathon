@@ -1,0 +1,27 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Marathon/libs/ShareSDK-Core-2.6.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/libs/ShareSDK-ShortMessage-2.5.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/libs/ShareSDK-TencentWeibo-2.5.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/libs/mframework.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/libs/ShareSDK-Wechat-Core-2.5.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/libs/ShareSDK-Facebook-2.5.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/libs/ShareSDK-SinaWeibo-2.5.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/libs/ShareSDK-Wechat-2.5.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/libs/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/libs/volleylib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/libs/baidumapapi_v3_4_0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/libs/ShareSDK-QQ-2.5.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/libs/ShareSDK-Email-2.5.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/libs/locSDK_5.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/libs/wmqtt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/libs/ShareSDK-Wechat-Moments-2.5.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/libs/MobTools.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/libs/ShareSDK-Twitter-2.5.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/libs/ShareSDK-QZone-2.5.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

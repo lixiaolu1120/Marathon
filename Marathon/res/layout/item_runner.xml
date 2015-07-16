@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/runner_avatar"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+         />
+
+    <LinearLayout
+        style="@style/layout_ww"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/runner_avatar"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/runner_name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            style="@style/layout_ww" />
+
+       <TextView
+            android:id="@+id/runner_desc"
+            style="@style/layout_ww"
+            android:visibility="gone"
+            android:text="sdsd" />
+    </LinearLayout>
+
+</RelativeLayout>

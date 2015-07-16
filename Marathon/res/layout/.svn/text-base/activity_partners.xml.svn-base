@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/title" >
+
+        <LinearLayout
+            android:id="@+id/back_partner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <cn.cnic.marathon.ui.CustomTextView
+                style="@style/layout_ww"
+                android:layout_marginLeft="10sp"
+                android:text="@string/arrow_back"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                style="@style/layout_ww"
+                android:text="@string/back"
+                android:textColor="@color/wheat"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/layout_ww"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/partner_info"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="5sp"
+        android:focusable="true" 
+        android:focusableInTouchMode="true"
+        >
+
+        <cn.cnic.marathon.ui.CustomEditView
+            android:id="@+id/search_partner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_corner"
+            android:gravity="center_horizontal"
+            android:hint="@string/search_hint"
+            android:padding="2sp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/partner_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+</LinearLayout>

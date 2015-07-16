@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="fill_parent"
+        android:background="#FF171717"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/user_setting"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/setting_item"
+            android:orientation="horizontal"
+            android:padding="15dp" >
+
+            <ImageView
+                android:id="@+id/user_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:src="@drawable/runner" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/user_avatar"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="141dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pchy"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/unlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_item"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <cn.cnic.marathon.ui.CustomTextView
+                android:id="@+id/default_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:background="@drawable/default_avatar_cornor"
+                android:text="@string/default_avatar"
+                android:textColor="#919191"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/setting_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/default_avatar"
+                android:text="@string/login_register"
+                android:textColor="#FFFF0000"
+                android:textSize="20sp" />
+
+            <cn.cnic.marathon.ui.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="15dp"
+                android:text="@string/arrow_list"
+                android:textColor="#FFFFFFFF"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/setting_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_item" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

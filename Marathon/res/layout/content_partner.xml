@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/base_title" 
+        android:id="@+id/schedu_content_title"/>
+    
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/schedu_content_title" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/schedu_content_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="马拉松日程需知"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+
+            <TextView
+                android:id="@+id/schedu_content_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="          时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假时候上课就放寒假"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/ShareSDK-TencentWeibo-2.5.9-ac4053bc186710ddd0d8150fa7e395e4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/mframework-08f6c196209d60a3c08c61a82e104b77.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/locSDK_5.0-9c3fbfc7aa5bb923e0d3abbe2b7cd44e.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/ShareSDK-SinaWeibo-2.5.9-b5c8e740dcea04b681833a408953fad5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/ShareSDK-QQ-2.5.9-570bbc85eb0653d571fe6e199a850270.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/ShareSDK-Twitter-2.5.9-c8562329826c0d728f948b6cb775f5e8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/ShareSDK-Wechat-Moments-2.5.9-08ee8337bd5e3376deca7fd1b6042d26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/ShareSDK-QZone-2.5.9-ede4ade2b75f243bcc54cc9171ab027f.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/ShareSDK-Core-2.6.0-17aea647daeab411be5d3e989e45bc79.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/ShareSDK-Wechat-Core-2.5.9-75d1e7ac8323967998d519e6c3ec6a9d.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/ShareSDK-ShortMessage-2.5.9-9a1b609640fe5874e14bddfab834eb35.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/android-support-v4-a59fce180d94e2c66f4b819f81fe5075.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/annotations-1a985cfda8f18418ea0efe64fcd55a22.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/wmqtt-d2e010fc1dcbf01c00fa1f8af30c806f.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/ShareSDK-Email-2.5.9-fb820a672b27e33dfb1c0c9566dde983.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/ShareSDK-Facebook-2.5.9-2d521792c6f94b001fbcab2806e590b0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/baidumapapi_v3_4_0-5c85aa33ebb0ccbb5230ffd11c086b49.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/MobTools-453d2dfa58d0ab48556b1ff2d7f39fd9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/ShareSDK-Wechat-2.5.9-ffbd68ce64817d4d48f89be6bb493932.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/library-e70a48ec1029a584bffe4c94baf0e6d7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Marathon/bin/dexedLibs/volleylib-ffa3723a7b156b7de1324b6dd85c0628.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

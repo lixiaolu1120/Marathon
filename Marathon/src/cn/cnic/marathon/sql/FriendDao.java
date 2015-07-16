@@ -1,0 +1,136 @@
+package cn.cnic.marathon.sql;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.util.Log;
+
+import java.util.List;
+import java.util.Map;
+
+import cn.cnic.marathon.util.Utils;
+
+public class FriendDao {
+    private DBManager manager;
+
+    public FriendDao(Context context) {
+        manager = DBManager.getInstance(context);
+    }
+
+    /**
+     * 获取最新加好友时间
+     *
+     * @return
+     */
+    public String getLastestTime() {
+        Cursor cursor = manager.queryBySql("select time from "
+                + DBManager.FRIEND_DAO + " order by time desc limit 0,1", null);
+        String time = "1970-01-01 00:00:00";
+        if (cursor.moveToFirst() && cursor.moveToNext())
+            time = cursor.getString(cursor.getColumnIndex("time"));
+        return time;
+    }
+
+    /**
+     * 读取所有好友列表
+     *
+     * @return
+     */
+    public Cursor getAllFriends() {
+        return manager.queryBySql("select id as _id,* from "
+                + DBManager.FRIEND_DAO, null);
+    }
+
+    /**
+     * 显示好友位置在地图上
+     */
+    public void showMarkInMap(int id) {
+        Log.i("DATA", "设置好友" + id + "在地图上显示");
+        manager.updateBySQL("update " + DBManager.FRIEND_DAO
+                + " set share = 1 where id = ?", new Integer[]{id});
+        Log.i("DATA", "sql语句:update " + DBManager.FRIEND_DAO
+                + " set share = 1 where id = " + id);
+    }
+
+    /**
+     * 不显示好友位置在地图上
+     */
+    public void hideMarkInMap(int id) {
+        Log.i("DATA", "取消好友" + id + "在地图上显示");
+        manager.updateBySQL("update " + DBManager.FRIEND_DAO
+                + " set share = 0 where id = ?", new Integer[]{id});
+        Log.i("DATA", "sql语句:update " + DBManager.FRIEND_DAO
+                + " set share = 0 where id = " + id);
+    }
+
+    /**
+     * 更新好友位置信息
+     *
+     * @param list
+     * @param time
+     */
+    public void updateFriendPosition(List<Map<String, String>> list, String time) {
+        String sqls[] = new String[list.size()];
+        Object bindArgs[][] = new Object[list.size()][];
+        for (int i = 0; i < list.size(); i++) {
+            Map<String, String> fpos = list.get(i);
+            sqls[i] = "update " + DBManager.FRIEND_DAO + " set lon = "
+                    + fpos.get("lon") + ",lat = " + fpos.get("lat")
+                    + ",time = '" + time + "' where uid = '" + fpos.get("uid") + "'";
+            bindArgs[i] = new Object[]{};
+        }
+        manager.updateMultilBySQL(sqls, bindArgs);
+    }
+
+    /**
+     * 更新好友是否分享
+     *
+     * @param list
+     * @param time
+     */
+    public void updateFriendShare(List<Map<String, Object>> list) {
+        String sqls[] = new String[list.size()];
+        Object bindArgs[][] = new Object[list.size()][];
+        for (int i = 0; i < list.size(); i++) {
+            Map<String, Object> fpos = list.get(i);
+            sqls[i] = "update " + DBManager.FRIEND_DAO
+                    + " set share = ? where uid = ?";
+            bindArgs[i] = new Object[]{fpos.get("share"), fpos.get("fid")};
+        }
+        manager.updateMultilBySQL(sqls, bindArgs);
+    }
+
+    void deleteAllFriends() {
+        manager.delete(DBManager.FRIEND_DAO, null, null);
+    }
+
+    /**
+     * 清空数据再插入
+     *
+     * @param list
+     * @param time
+     */
+    public void clearAndInsertFriends(List<Map<String, String>> list,
+                                      String time) {
+        deleteAllFriends();
+
+        if (list == null) return;
+        ContentValues[] values = new ContentValues[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            Map<String, String> f = list.get(i);
+            values[i] = new ContentValues();
+            // 临时用 接口没有返回MD5
+            values[i].put("md5", Utils.MD5(f.get("nickname")));
+            values[i].put("nickname", f.get("nickname"));
+            values[i].put("description", f.get("description"));
+            // values[i].put("avatar", f.get("avatar"));
+            values[i].put("uid", f.get("uid"));
+            values[i].put("share", f.get("share"));
+            // values[i].put("u_type", f.get("u_type"));
+            values[i].put("lat", "0.0");
+            values[i].put("lon", "0.0");
+            // values[i].put("time", time);
+        }
+        manager.insertMulti(DBManager.FRIEND_DAO, "id", values);
+    }
+}

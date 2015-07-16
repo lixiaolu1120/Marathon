@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="host">http://app.dviz.cn</string>
+    <!-- 检查用户名是否初注册请求地址 -->
+    <string name="checkUserURL">/mobile</string>
+    <!-- 用户注册请求地址 -->
+    <string name="registerURL">/mobile</string>
+    <!-- 用户信息完善请求地址 -->
+    <string name="userUpdateURL">/mobile</string>
+    <!-- 登录请求地址 -->
+    <string name="loginURL">/mobile</string>
+    <!-- 用户上传位置信息请求地址 -->
+    <string name="upPostionURL">/mobile</string>
+    <!-- 标注位置信息请求地址 -->
+    <string name="identifyURL">/mobile</string>
+    <!-- 运动员信息请求地址 -->
+    <string name="athleteURL">/mobile</string>
+    <!-- 啦啦队信息请求地址 -->
+    <string name="cheerURL">/mobile</string>
+    <!-- 合作伙伴请求地址 -->
+    <string name="partnerURL">/mobile</string>
+    <!-- 活动规程请求地址 -->
+    <string name="scheduleURL">/mobile</string>
+    <!-- 用户好友个数请求地址 -->
+    <string name="friendCountURL">/mobile</string>
+    <!-- 用户轨迹请求地址 -->
+    <string name="userPathURL">/mobile</string>
+    <!-- 某人轨迹请求地址 -->
+    <string name="onePathURL">/mobile</string>
+    <!-- 好友位置请求地址 -->
+    <string name="friendInfoURL">/mobile</string>
+    <!-- 好友位置请求地址 -->
+    <string name="friendPositonURL">/mobile</string>
+    <!-- 好友上传请求地址 -->
+    <string name="addFriendsURL">/mobile</string>
+    <!-- 约人请求地址 -->
+    <string name="invateFriendURL">/mobile</string>
+    <!-- 响应约人请求地址 -->
+    <string name="acceptinvatefriendURL">/mobile</string>
+    <!-- 响应好友请求地址 -->
+    <string name="acceptfrienduploadURL">/mobile</string>
+    <!-- 头像上传请求地址 -->
+    <string name="uploadavatarURL">/mobile</string>
+</resources>

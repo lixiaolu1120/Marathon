@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/title" >
+
+        <LinearLayout
+            android:id="@+id/back_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" >
+
+            <cn.cnic.marathon.ui.CustomTextView
+                style="@style/layout_ww"
+                android:layout_marginLeft="10sp"
+                android:text="@string/arrow_back"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                style="@style/layout_ww"
+                android:text="@string/back"
+                android:textColor="@color/wheat"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/layout_ww"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/detail"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical" />
+
+        <TextView
+            android:id="@+id/detail_content"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

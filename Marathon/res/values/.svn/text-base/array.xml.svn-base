@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="spingarr">
+        <item>系统</item>
+        <item>自定义</item>
+    </string-array>
+    <!-- poi列表中显示的title -->
+    <string-array name="poi_items_title">
+        <item>补给站</item>
+        <item>医疗点</item>
+        <item>收容所</item>
+        <item>洗手间</item>
+        <item>好友</item>
+    </string-array>
+
+    <!-- poi列表中在表中的类型，好友类型0除外 -->
+    <integer-array name="poi_items_type">
+        <item>3</item>
+        <item>4</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </integer-array>
+
+    <!-- poi列表中在表中图标 -->
+    <string-array name="poi_items_icon">
+        <item>@string/kafei</item>
+        <item>@string/yaopin</item>
+        <item>@string/zhaodaisuo</item>
+        <item>@string/cesuo</item>
+        <item>@string/haoyou</item>
+    </string-array>
+
+    <!-- poi列表中在表中背景 -->
+    <string-array name="poi_tiems_background">
+        <item>@drawable/point_supply</item>
+        <item>@drawable/point_medical</item>
+        <item>@drawable/point_hospice</item>
+        <item>@drawable/point_wc</item>
+        <item>@drawable/point_friends</item>
+    </string-array>
+
+</resources>

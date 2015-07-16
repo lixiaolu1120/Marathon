@@ -1,0 +1,106 @@
+10
+
+dir
+1313
+svn://159.226.50.205/app/client/library/res
+svn://159.226.50.205
+
+
+
+2015-04-27T07:35:31.349139Z
+1301
+cuixp
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+5728aaeb-5b47-459b-96d4-f5ea93515c75
+
+anim
+dir
+
+drawable
+dir
+
+drawable-hdpi
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+drawable-xhdpi
+dir
+
+layout
+dir
+
+values
+dir
+
+values-ar
+dir
+
+values-cs
+dir
+
+values-de
+dir
+
+values-es
+dir
+
+values-fi
+dir
+
+values-fr
+dir
+
+values-he
+dir
+
+values-it
+dir
+
+values-iw
+dir
+
+values-ja
+dir
+
+values-ko
+dir
+
+values-nl
+dir
+
+values-pl
+dir
+
+values-pt
+dir
+
+values-pt-rBR
+dir
+
+values-ro
+dir
+
+values-ru
+dir
+
+values-zh
+dir
+

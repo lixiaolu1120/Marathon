@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center_vertical"
+    android:padding="10dp"
+    android:background="@drawable/setting_item"
+    >
+
+    <cn.cnic.marathon.ui.CustomTextView
+        android:id="@+id/setting_item_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffe10d21"
+        android:textSize="25sp"
+        android:layout_marginLeft="10sp" 
+        />
+
+    <TextView
+        android:id="@+id/setting_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#FFFFFFFF"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/setting_item_logo"
+        android:layout_centerVertical="true"
+        />
+
+    <cn.cnic.marathon.ui.CustomTextView
+        android:id="@+id/setting_item_tool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFFFF"
+        android:paddingRight="20dp"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 检查用户名是否初注册请求类型 -->
+    <string name="checkUserRequest">check_user</string>
+    <!-- 用户注册请求类型 -->
+    <string name="registerRequest">register</string>
+    <!-- 用户信息完善请求类型 -->
+    <string name="userUpdateRequest">user_update</string>
+    <!-- 登录请求类型 -->
+    <string name="loginRequest">login</string>
+    <!-- 用户上传位置信息请求类型 -->
+    <string name="upPostionRequest">up_pos</string>
+    <!-- 标注位置信息请求类型 -->
+    <string name="identifyRequest">identify</string>
+    <!-- 运动员信息请求类型 -->
+    <string name="athleteRequest">athe_info</string>
+    <!-- 啦啦队信息请求类型 -->
+    <string name="cheerRequest">cheer</string>
+    <!-- 合作伙伴请求类型 -->
+    <string name="partnerRequest">partner</string>
+    <!-- 活动规程请求类型 -->
+    <string name="scheduleRequest">calendar</string>
+    <!-- 用户好友个数请求类型 -->
+    <string name="friendCountRequest">friend</string>
+    <!-- 用户轨迹请求类型 -->
+    <string name="userPathRequest">trace</string>
+    <!-- 某人轨迹请求类型 -->
+    <string name="onePathRequest">someone_trace</string>
+    <!-- 好友位置请求类型 -->
+    <string name="friendPositonRequest">friend_pos</string>
+    <!-- 好友列表请求类型 -->
+    <string name="friendInfoRequest">friend_info</string>
+    <!-- 好友上传请求类型 -->
+    <string name="addFriendsRequest">friend_upload</string>
+    <!-- 约人请求类型 -->
+    <string name="invatefriend">invite_friend</string>
+    <!-- 响应约人请求类型 -->
+    <string name="acceptinvatefriend">accept_invite_friend</string>
+    <!-- 加好友 -->
+    <string name="acceptfriendupload">accept_friend_upload</string>
+    <!-- 头像上传请求类型 -->
+    <string name="uploadavatar">upload_avatar</string>
+    <!-- 请求位置共享 -->
+    <string name="locshare">loc_share</string>
+    <!-- 删除好友 -->
+    <string name="removefriend">remove_friend</string>
+    <!-- 响应位置共享请求 -->
+    <string name="location_share">res_loc_share</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 连框颜色值 -->
+    <item>
+        <shape>
+            <gradient android:startColor="#262626" android:endColor="#171717" android:type="linear"/>
+            <stroke android:width="3dp"/>
+        </shape>
+    </item>
+    <item android:bottom="3dp"
+        >
+        <shape>
+            <solid android:color="#262626"/>
+        </shape>
+    </item>
+</layer-list>

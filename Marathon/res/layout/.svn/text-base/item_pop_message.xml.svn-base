@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="#e0000000"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/search_friend_relative"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/search_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:text="搜索" />
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/search_friend"
+            android:hint="搜索好友"
+            android:layout_alignBaseline="@id/search_friend"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/search_address_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_friend_relative"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@color/lightgrey"
+        android:onClick="click"
+        android:padding="10dp"
+        android:text="扫描通讯录"
+        android:textSize="18sp" />
+
+</RelativeLayout>

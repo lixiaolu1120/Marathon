@@ -1,0 +1,54 @@
+package cn.cnic.marathon.tools;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import android.content.Context;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import cn.cnic.marathon.R;
+
+import com.baidu.mapapi.map.BaiduMap;
+import com.baidu.mapapi.map.BitmapDescriptor;
+import com.baidu.mapapi.map.BitmapDescriptorFactory;
+import com.baidu.mapapi.map.InfoWindow;
+import com.baidu.mapapi.map.Marker;
+import com.baidu.mapapi.map.MarkerOptions;
+import com.baidu.mapapi.map.OverlayOptions;
+import com.baidu.mapapi.map.PolylineOptions;
+import com.baidu.mapapi.map.BaiduMap.OnMarkerClickListener;
+import com.baidu.mapapi.map.InfoWindow.OnInfoWindowClickListener;
+import com.baidu.mapapi.model.LatLng;
+import com.baidu.mapapi.search.geocode.GeoCoder;
+import com.baidu.mapapi.search.geocode.ReverseGeoCodeOption;
+
+public class MapTools {
+	/**
+	 * 画出好友关系图
+	 * 
+	 * @param me
+	 * @param friends
+	 */
+	public static void drawRelationship(double[] me, double[][] friends,
+			BaiduMap mBaiduMap) {
+		for (int i = 0; i < friends.length; i++) {
+			List<LatLng> latLngsss = new ArrayList<LatLng>();
+			latLngsss.add(new LatLng(me[1], me[0]));
+			double[] friend = friends[i];
+			latLngsss.add(new LatLng(friend[1], friend[0]));
+			PolylineOptions lo1 = new PolylineOptions();
+			lo1.visible(true);
+			lo1.width(3);
+			lo1.color(Color.BLUE);
+			lo1.color(Color.RED);
+			lo1.points(latLngsss);
+			mBaiduMap.addOverlay(lo1);
+		}
+	}
+}

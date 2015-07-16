@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 检查用户名是否初注册响应类型 -->
+    <string name="checkUserResponse">ret_check_user</string>
+    <!-- 用户注册响应类型 -->
+    <string name="registerResponse">ret_register</string>
+    <!-- 用户信息完善响应类型 -->
+    <string name="userUpdateResponse">user_update</string>
+    <!-- 登录响应类型 -->
+    <string name="loginResponse">ret_login</string>
+    <!-- 用户上传位置信息响应类型 -->
+    <string name="upPostionResponse">ret_up_pos</string>
+    <!-- 标注位置信息响应类型 -->
+    <string name="identifyResponse">ret_identify</string>
+    <!-- 运动员信息响应类型 -->
+    <string name="athleteResponse">ret_athe_info</string>
+    <!-- 啦啦队信息响应类型 -->
+    <string name="cheerResponse">ret_cheer</string>
+    <!-- 合作伙伴响应类型 -->
+    <string name="partnerResponse">ret_partner</string>
+    <!-- 活动规程响应类型 -->
+    <string name="scheduleResponse">ret_calendar</string>
+    <!-- 用户好友个数响应类型 -->
+    <string name="friendCountResponse">ret_friend</string>
+    <!-- 用户轨迹响应类型 -->
+    <string name="userPathResponse">ret_trace</string>
+    <!-- 某人轨迹请求类型 -->
+    <string name="onePathResponse">ret_someone_trace</string>
+    <!-- 好友位置响应类型 -->
+    <string name="friendPositonResponse">ret_friend_pos</string>
+    <!-- 好友上传响应类型 -->
+    <string name="addFriendsResponse">ret_friend_upload</string>
+</resources>

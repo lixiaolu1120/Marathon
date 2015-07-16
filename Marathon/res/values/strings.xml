@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Em-App</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_sharepreference">app_sharepreference</string>
+    <!-- 天气 -->
+    <string name="weather">天气</string>
+    <!-- 个人中心-->
+    <string name="user">个人中心</string>
+    <!-- 个人中心 -->
+    <string name="forget">忘记密码？</string>
+    <string name="wxlogin">一键登录</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="login_register">登录/注册</string>
+    <string name="phone">手机号</string>
+    <string name="password">密码</string>
+    <string name="repassword">密码确认</string>
+    <!-- 设置 -->
+    <string name="set">设置</string>
+    <string name="title">北京马拉松</string>
+    <!-- listview刷新 -->
+    <string name="listview_header_hint_normal">下拉刷新</string>
+    <string name="listview_header_hint_ready">松开刷新数据</string>
+    <string name="listview_header_hint_loading">正在加载...</string>
+    <string name="listview_header_last_time">上次更新时间：</string>
+    <string name="listview_footer_hint_normal">查看更多</string>
+    <string name="listview_footer_hint_ready">松开载入更多</string>
+    <!--
+         <string name="listview_footer_hint_normal">查看更多</string>
+    <string name="listview_footer_hint_ready">松开载入更多</string>
+    -->
+    <!-- 观众界面 -->
+    <string name="audience_title_right">地图</string>
+    <!-- 广告界面 -->
+    <string name="adver_title_right"></string>
+    <!-- spinner -->
+    <string name="spinner_text">请选择站点</string>
+    <!-- spinner item -->
+    <string-array name="address">
+        
+        <item>站点</item>
+        <item>洗手间</item>
+        <item>收容站</item>
+        <item>饮料站</item>
+        <item>饮水用水站</item>
+        <item>收容车站</item>
+        <item>食品供应站</item>
+    </string-array>
+    
+    <!-- 字体图标 -->
+    <string name="kafei">&#xe600;</string>
+    <string name="haoyou">&#xe609;</string>
+    <string name="yaopin">&#xe601;</string>
+    <string name="kanguo">&#xe602;</string>
+    <string name="weixin">&#xe603;</string>
+    <string name="liebiao">&#xe604;</string>
+    <string name="shezhi">&#xe605;</string>
+    <string name="guanyu">&#xe606;</string>
+    <string name="laladui">&#xe607;</string>
+    <string name="fangda">&#xe608;</string>
+    <string name="zhaodaisuo">&#xe60a;</string>
+    <string name="dingwei">&#xe60b;</string>
+    <string name="fangxiang">&#xe60c;</string>
+    <string name="hezuohuoban">&#xe60d;</string>
+    <string name="weizhi">&#xe60e;</string>
+    <string name="shishi">&#xe60f;</string>
+    <string name="suoxiao">&#xe610;</string>
+    <string name="guize">&#xe611;</string>
+    <string name="paobu">&#xe612;</string>
+    <string name="yundongyuan">&#xe613;</string>
+    <string name="cesuo">&#xe614;</string>
+    <string name="radiusshap">&#xe615;</string>
+    <string name="arrow_back">&#xe616;</string>
+    <string name="arrow_list">&#xe617;</string>
+    <string name="search">&#xe618;</string>
+    <string name="triangle">&#xe619;</string>
+    <string name="add">&#xe61a;</string>
+    <string name="default_avatar">&#xe61b;</string>
+    <string name="search_hint">&#xe618; Search</string>
+    <string name="team">&#xe609;</string>
+    <string name="back">返回</string>
+    
+    <!-- 设置界面文字 -->
+    <string name="friends_manage">好友管理</string>
+    <string name="schedule_info">比赛规程</string>
+    <string name="introduction">球赛介绍</string>
+    <string name="team_info">出场球队</string>
+    <string name="runner_info">明星运动员</string>
+    <string name="cheers_info">啦啦队</string>
+    <string name="partner_info">合作伙伴</string>
+    <string name="realtime">实时赛事</string>
+    <string name="about_us">关于我们</string>
+    <string name="userinfo">我的信息</string>
+    
+    <string name="avatar">头像</string>
+    <string name="nickname">昵     称</string>
+    <string name="u_type">类型</string>
+    <string name="u_desc">描述</string>
+    <string name="un_login">注销</string>
+    <string name="submit">提交</string>
+    <string name="sms_code">验证码</string>
+    <string name="detail">详情</string>
+    <string name="mqtt_host">159.226.50.183</string>
+    <string name="register_pushserver_url">http://apns.em-brain.cn/apns.aspx</string>
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    style="@style/title" >
+
+    <TextView
+        android:id="@+id/back"
+        style="@style/layout_ww"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:text="〈 返回"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</RelativeLayout>
