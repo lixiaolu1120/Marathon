@@ -223,8 +223,6 @@ public class UserInfoActivity extends BaseActivity implements OnClickListener,
             out.close();
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
-
         }
 
         try {
